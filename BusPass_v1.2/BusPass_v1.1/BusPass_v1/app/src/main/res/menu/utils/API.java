@@ -1,4 +1,4 @@
-package utils;
+package menu.utils;
 
 import com.example.buspass_v1.entity.User;
 import com.google.gson.JsonObject;

@@ -1,6 +1,16 @@
 package com.example.buspass_v1.activities;
 
-import android.app.Activity;
+import androidx.appcompat.app.AppCompatActivity;
 
-public class ProfileActivity extends Activity {
+import android.os.Bundle;
+
+import com.example.buspass_v1.R;
+
+public class ProfileActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_profile);
+    }
 }

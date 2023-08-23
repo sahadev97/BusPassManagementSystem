@@ -26,17 +26,12 @@ public class HomeActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.menu_new_pass:
-                Intent newPassIntent = new Intent(this, NewPassActivity.class);
-                startActivity(newPassIntent);
-                return true;
-            case R.id.menu_renew_pass:
-                Intent renewPassIntent = new Intent(this, RenewPassActivity.class);
-                startActivity(renewPassIntent);
-                return true;
-            case R.id.menu_show_pass:
+            case R.id.menu_showPass:
                 Intent showPassIntent = new Intent(this, ShowPassActivity.class);
                 startActivity(showPassIntent);
+            case R.id.menu_profile:
+                Intent profileIntent = new Intent(this, ProfileActivity.class);
+                startActivity(profileIntent);
                 return true;
             case R.id.menu_about_us:
                 Intent aboutUsIntent = new Intent(this, AboutUsActivity.class);
@@ -54,12 +49,20 @@ public class HomeActivity extends AppCompatActivity {
         }
     }
 
-    public void empPassBtn(View view) {
+    public void NewPassBtn(View view) {
         startActivity(new Intent(this, NewPassActivity.class));
     }
 
-    public void studentPassBtn(View view) {
-        startActivity(new Intent(this, NewPassActivity.class));
+    public void RenewPassBtn(View view) {
+        startActivity(new Intent(this, RenewPassActivity.class));
+    }
+
+    public void CancelPassBtn(View view) {
+        startActivity(new Intent(this, CancelPassActivity.class));
+    }
+
+    public void PassHistoryBtn(View view) {
+        startActivity(new Intent(this, PassHistoryActivity.class));
     }
 
 

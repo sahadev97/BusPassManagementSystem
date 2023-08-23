@@ -1,4 +1,4 @@
-package utils;
+package menu.utils;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;

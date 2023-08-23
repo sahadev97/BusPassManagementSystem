@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/menu_new_pass"
-        android:title="New Pass" />
-    <item android:id="@+id/menu_renew_pass"
-        android:title="Renew Pass" />
-    <item android:id="@+id/menu_show_pass"
-        android:title="Show Pass" />
+      <item android:id="@+id/menu_showPass"
+          android:title="Show Pass"/>
+    <item android:id="@+id/menu_profile"
+        android:title="Profile" />
     <item android:id="@+id/menu_about_us"
         android:title="About Us" />
     <item android:id="@+id/menu_faq"
